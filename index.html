@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta name="theme-color" content="#000000">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="INFO DZ">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="application-name" content="INFO DZ NATIONAL">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" type="image/svg+xml" href="images/icon-192.svg">
+  <link rel="apple-touch-icon" href="images/icon-192.svg">
+  <title>INFO DZ NATIONAL - الأخبار الوطنية</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Breaking News Ticker -->
+  <div class="ticker-wrap" id="tickerWrap">
+    <div class="ticker-label"><i class="fas fa-bolt"></i> عاجل</div>
+    <div class="ticker-overlay-left"></div>
+    <div class="ticker-overlay-right"></div>
+    <div class="ticker-track" id="tickerTrack"></div>
+  </div>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="header-top">
+      <div class="container header-flex">
+        <div class="logo">
+          <div class="logo-icon">
+            <img src="برومت_الخريطة_الجزائرية__Cinematic_realistic_202605291925.jpeg" alt="Algeria" class="logo-map">
+          </div>
+          <div class="logo-text">
+            <h1>INFO <span>DZ</span> NATIONAL</h1>
+            <p>الأخبار الوطنية</p>
+          </div>
+        </div>
+        <div class="header-actions">
+          <div class="search-box" id="searchBox">
+            <input type="text" id="searchInput" placeholder="بحث...">
+            <button id="searchBtn"><i class="fas fa-search"></i></button>
+          </div>
+          <button class="menu-toggle" id="menuToggle">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <nav class="navbar" id="navbar">
+      <div class="container">
+        <ul class="nav-list" id="navList">
+          <li><a href="#home" class="active"><i class="fas fa-home"></i> الرئيسية</a></li>
+          <li><a href="#videos"><i class="fas fa-video"></i> الفيديوهات</a></li>
+          <li><a href="#news"><i class="fas fa-newspaper"></i> الأخبار</a></li>
+          <li class="nav-dropdown">
+            <a href="#"><i class="fas fa-th-large"></i> التصنيفات <i class="fas fa-chevron-down"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="#police"><i class="fas fa-user-shield"></i> الشرطة</a></li>
+              <li><a href="#gendarmerie"><i class="fas fa-car-side"></i> الدرك الوطني</a></li>
+              <li><a href="#justice"><i class="fas fa-gavel"></i> العدالة</a></li>
+              <li><a href="#prison"><i class="fas fa-lock"></i> السجن</a></li>
+              <li><a href="#crime"><i class="fas fa-search"></i> التحقيقات الجنائية</a></li>
+              <li><a href="#national"><i class="fas fa-flag"></i> أخبار وطنية</a></li>
+            </ul>
+          </li>
+          <li><a href="#contact"><i class="fas fa-envelope"></i> اتصل بنا</a></li>
+          <li><a href="admin.html"><i class="fas fa-cog"></i> الإدارة</a></li>
+        </ul>
+        <div class="nav-social">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-slides" id="heroSlides">
+      <div class="hero-slide active" style="background-image: url('Algerian_police_arresting_a_dangerous_202605281729.jpeg')">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <span class="hero-category police">الشرطة</span>
+          <h2>عملية أمنية نوعية تطيح بشبكة إجرامية</h2>
+          <p>تمكنت مصالح الشرطة الجزائرية من تفكيك شبكة إجرامية خطيرة تنشط في مجال تهريب المخدرات عبر عدة ولايات.</p>
+          <a href="#" class="hero-btn">قراءة المزيد <i class="fas fa-arrow-left"></i></a>
+        </div>
+      </div>
+      <div class="hero-slide" style="background-image: url('Large_Algerian_courtroom_interior,_Arabic_202605291312.jpeg')">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <span class="hero-category justice">العدالة</span>
+          <h2>محكمة الجزائر تصدر أحكاماً تاريخية</h2>
+          <p>محكمة الجزائر العاصمة تصدر أحكاماً مشددة في قضايا الفساد الكبير التي هزت الرأي العام الوطني.</p>
+          <a href="#" class="hero-btn">قراءة المزيد <i class="fas fa-arrow-left"></i></a>
+        </div>
+      </div>
+      <div class="hero-slide" style="background-image: url('Dark_Algerian_prison_corridor,_realistic_202605291122.jpeg')">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <span class="hero-category prison">السجن</span>
+          <h2>إصلاح شامل للمؤسسات العقابية</h2>
+          <p>وزارة العدل تطلق برنامجاً وطنياً لتأهيل وإعادة هيكلة المؤسسات العقابية وفق المعايير الدولية.</p>
+          <a href="#" class="hero-btn">قراءة المزيد <i class="fas fa-arrow-left"></i></a>
+        </div>
+      </div>
+      <div class="hero-slide" style="background-image: url('Masked_criminal_attempting_car_theft_202605291359.jpeg')">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <span class="hero-category crime">التحقيقات الجنائية</span>
+          <h2>الفرقة الجنائية تكشف غموض جريمة</h2>
+          <p>الفرقة الوطنية للتحقيقات الجنائية تنجح في كشف ملابسات جريمة قتل بعد تحقيق دام أسابيع.</p>
+          <a href="#" class="hero-btn">قراءة المزيد <i class="fas fa-arrow-left"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="hero-nav">
+      <button class="hero-nav-btn" id="heroPrev"><i class="fas fa-chevron-right"></i></button>
+      <div class="hero-dots" id="heroDots"></div>
+      <button class="hero-nav-btn" id="heroNext"><i class="fas fa-chevron-left"></i></button>
+    </div>
+  </section>
+
+  <!-- News Section -->
+  <section class="news-section" id="news">
+    <div class="container">
+      <div class="section-header">
+        <h2>آخر الأخبار</h2>
+        <p>أحدث التطورات والمستجدات الوطنية</p>
+      </div>
+      <div id="newsGrid" class="news-grid"></div>
+    </div>
+  </section>
+
+  <!-- Categories Section -->
+  <section class="categories-section" id="categories">
+    <div class="container">
+      <div class="section-header">
+        <h2>التصنيفات</h2>
+        <p>أحدث الأخبار حسب التصنيف</p>
+      </div>
+      <div class="categories-grid">
+        <a href="#police" class="category-card" style="--cat-color: #0066cc;">
+          <div class="category-icon">
+            <i class="fas fa-user-shield"></i>
+          </div>
+          <h3>الشرطة</h3>
+          <span>Polices</span>
+        </a>
+        <a href="#gendarmerie" class="category-card" style="--cat-color: #006233;">
+          <div class="category-icon">
+            <i class="fas fa-car-side"></i>
+          </div>
+          <h3>الدرك الوطني</h3>
+          <span>Gendarmerie Nationale</span>
+        </a>
+        <a href="#justice" class="category-card" style="--cat-color: #C8A84E;">
+          <div class="category-icon">
+            <i class="fas fa-gavel"></i>
+          </div>
+          <h3>العدالة</h3>
+          <span>Justice</span>
+        </a>
+        <a href="#prison" class="category-card" style="--cat-color: #8B0000;">
+          <div class="category-icon">
+            <i class="fas fa-lock"></i>
+          </div>
+          <h3>السجن</h3>
+          <span>Prison</span>
+        </a>
+        <a href="#crime" class="category-card" style="--cat-color: #D21034;">
+          <div class="category-icon">
+            <i class="fas fa-search"></i>
+          </div>
+          <h3>التحقيقات الجنائية</h3>
+          <span>Crime Investigation</span>
+        </a>
+        <a href="#national" class="category-card" style="--cat-color: #008751;">
+          <div class="category-icon">
+            <i class="fas fa-flag"></i>
+          </div>
+          <h3>أخبار وطنية</h3>
+          <span>National News</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Video Section -->
+  <section class="video-section" id="videos">
+    <div class="container">
+      <div class="section-header">
+        <h2>الفيديوهات</h2>
+        <p>آخر التقارير المصورة</p>
+      </div>
+      <div class="video-grid" id="videoGrid"></div>
+      <div class="video-more">
+        <a href="#" class="btn-outline">عرض كل الفيديوهات <i class="fas fa-arrow-left"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats-section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-icon"><i class="fas fa-newspaper"></i></div>
+          <span class="stat-number" data-target="12847">0</span>
+          <p>مقال منشور</p>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon"><i class="fas fa-video"></i></div>
+          <span class="stat-number" data-target="3421">0</span>
+          <p>تقرير مصور</p>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon"><i class="fas fa-users"></i></div>
+          <span class="stat-number" data-target="567892">0</span>
+          <p>متابع</p>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon"><i class="fas fa-shield-alt"></i></div>
+          <span class="stat-number" data-target="956">0</span>
+          <p>عملية أمنية مغطاة</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Report Section -->
+  <section class="report-section">
+    <div class="container">
+      <div class="report-card">
+        <div class="report-bg" style="background-image: url('Large_Algerian_courtroom_interior,_Arabic_202605291312.jpeg')"></div>
+        <div class="report-overlay"></div>
+        <div class="report-content">
+          <div class="report-label">تقرير خاص</div>
+          <h2>الفساد الكبير: ملفات ساخنة على طاولة القضاء</h2>
+          <p>تحقيق استقصائي يكشف تفاصيل جديدة في قضايا الفساد الكبرى التي تشغل الرأي العام الوطني والدولي.</p>
+          <div class="report-meta">
+            <span><i class="far fa-clock"></i> 05 يونيو 2026</span>
+            <span><i class="far fa-user"></i> هيئة التحرير</span>
+          </div>
+          <a href="#" class="hero-btn">قراءة التقرير الكامل <i class="fas fa-arrow-left"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Section -->
+  <section class="newsletter-section">
+    <div class="container">
+      <div class="newsletter-box">
+        <div class="newsletter-content">
+          <h3>النشرة الإخبارية</h3>
+          <p>اشترك لتصلك آخر الأخبار والتقارير الحصرية على بريدك الإلكتروني</p>
+        </div>
+        <form class="newsletter-form" id="newsletterForm">
+          <input type="email" placeholder="أدخل بريدك الإلكتروني" required>
+          <button type="submit">اشتراك</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <div class="logo footer-logo">
+             <div class="logo-icon">
+            <img src="برومت_الخريطة_الجزائرية__Cinematic_realistic_202605291925.jpeg" alt="Algeria" class="logo-map">
+            </div>
+            <div class="logo-text">
+              <h1>INFO <span>DZ</span> NATIONAL</h1>
+              <p>الأخبار الوطنية</p>
+            </div>
+          </div>
+          <p class="footer-desc">منصة إخبارية جزائرية مهتمة بكل ما يتعلق بالشأن الأمني والقضائي والوطني. نقدم لكم تغطية حصرية وموثوقة لأهم الأحداث.</p>
+          <div class="footer-social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-telegram-plane"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <h4>التصنيفات</h4>
+          <ul>
+            <li><a href="#"><i class="fas fa-angle-left"></i> الشرطة</a></li>
+            <li><a href="#"><i class="fas fa-angle-left"></i> الدرك الوطني</a></li>
+            <li><a href="#"><i class="fas fa-angle-left"></i> العدالة</a></li>
+            <li><a href="#"><i class="fas fa-angle-left"></i> السجن</a></li>
+            <li><a href="#"><i class="fas fa-angle-left"></i> التحقيقات الجنائية</a></li>
+            <li><a href="#"><i class="fas fa-angle-left"></i> أخبار وطنية</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>روابط سريعة</h4>
+          <ul>
+            <li><a href="#"><i class="fas fa-angle-left"></i> من نحن</a></li>
+            <li><a href="#"><i class="fas fa-angle-left"></i> سياسة الخصوصية</a></li>
+            <li><a href="#"><i class="fas fa-angle-left"></i> شروط الاستخدام</a></li>
+            <li><a href="#"><i class="fas fa-angle-left"></i> اتصل بنا</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact" id="contact">
+          <h4>اتصل بنا</h4>
+          <ul>
+            <li><i class="fas fa-map-marker-alt"></i> الجزائر العاصمة، الجزائر</li>
+            <li><i class="fas fa-phone"></i> +213 (0) 23 45 67 89</li>
+            <li><i class="fas fa-envelope"></i> contact@infodznational.dz</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 INFO DZ NATIONAL. جميع الحقوق محفوظة.</p>
+        <p>تصميم و تطوير <span>INFO DZ</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top -->
+  <button class="scroll-top" id="scrollTop">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="js/script.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js').catch(function() {});
+    }
+  </script>
+</body>
+</html>
