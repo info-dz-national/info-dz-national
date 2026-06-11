@@ -260,7 +260,7 @@ document.addEventListener('DOMContentLoaded', () => {
       {
         title: "عملية مداهمة ناجحة للشرطة الجزائرية",
         description: "توثيق حصري لعملية أمنية تطوق أوكار المجرمين",
-        thumbnail: "Algerian_police_arresting_a_dangerous_202605281729.jpeg",
+        thumbnail: "images/Algerian_police_arresting_a_dangerous_202605281729.jpeg",
         url: "",
         duration: "04:32",
         date: "05 يونيو 2026"
@@ -268,7 +268,7 @@ document.addEventListener('DOMContentLoaded', () => {
       {
         title: "جلسة محاكمة علنية: قضايا الفساد الكبرى",
         description: "تغطية خاصة من داخل قاعة المحكمة العليا",
-        thumbnail: "Large_Algerian_courtroom_interior,_Arabic_202605291312.jpeg",
+        thumbnail: "images/Large_Algerian_courtroom_interior,_Arabic_202605291312.jpeg",
         url: "",
         duration: "12:18",
         date: "04 يونيو 2026"
@@ -276,7 +276,7 @@ document.addEventListener('DOMContentLoaded', () => {
       {
         title: "داخل السجن: تقرير عن ظروف المؤسسات العقابية",
         description: "تحقيق استقصائي يرصد واقع السجون الجزائرية",
-        thumbnail: "Dark_Algerian_prison_corridor,_realistic_202605291122.jpeg",
+        thumbnail: "images/Dark_Algerian_prison_corridor,_realistic_202605291122.jpeg",
         url: "",
         duration: "08:45",
         date: "03 يونيو 2026"
@@ -284,7 +284,7 @@ document.addEventListener('DOMContentLoaded', () => {
       {
         title: "التحقيقات الجنائية: كشف الأدلة المادية",
         description: "داخل مختبرات الأدلة الجنائية والتحليل الرقمي",
-        thumbnail: "Masked_criminal_attempting_car_theft_202605291359.jpeg",
+        thumbnail: "images/Masked_criminal_attempting_car_theft_202605291359.jpeg",
         url: "",
         duration: "06:20",
         date: "02 يونيو 2026"
@@ -616,7 +616,7 @@ document.addEventListener('DOMContentLoaded', () => {
       {
         title: "عملية أمنية كبرى في 5 ولايات",
         category: "الشرطة",
-        image: "Algerian_police_arresting_a_dangerous_202605281729.jpeg",
+        image: "images/Algerian_police_arresting_a_dangerous_202605281729.jpeg",
         text: "أسفرت عملية أمنية واسعة النطاق عبر 5 ولايات عن توقيف 23 متهماً وحجز كميات كبيرة من المخدرات والأسلحة البيضاء.",
         date: "05 يونيو 2026",
         location: "الجزائر العاصمة",
@@ -625,7 +625,7 @@ document.addEventListener('DOMContentLoaded', () => {
       {
         title: "الدرك الوطني يطلق الرقم الأخضر",
         category: "الدرك الوطني",
-        image: "برومت_الرقم_الأخضر_للدرك_الوطني__202605291656.jpeg",
+        image: "images/برومت_الرقم_الأخضر_للدرك_الوطني__202605291656.jpeg",
         text: "إطلاق خط ساخن جديد للإبلاغ عن الحوادث والاستفسار عن الخدمات الأمنية على مدار 24 ساعة.",
         date: "05 يونيو 2026",
         location: "الجزائر",
@@ -634,7 +634,7 @@ document.addEventListener('DOMContentLoaded', () => {
       {
         title: "إصلاح المنظومة القضائية",
         category: "العدالة",
-        image: "Large_Algerian_courtroom_interior,_Arabic_202605291312.jpeg",
+        image: "images/Large_Algerian_courtroom_interior,_Arabic_202605291312.jpeg",
         text: "وزارة العدل تعلن عن حزمة إصلاحات شاملة لتحديث المنظومة القضائية ورقمنة الخدمات العدلية.",
         date: "05 يونيو 2026",
         location: "الجزائر العاصمة",
@@ -643,7 +643,7 @@ document.addEventListener('DOMContentLoaded', () => {
       {
         title: "برنامج إعادة التأهيل والإدماج",
         category: "السجن",
-        image: "Close-up_of_prisoner_hands_gripping_202605291251.jpeg",
+        image: "images/Close-up_of_prisoner_hands_gripping_202605291251.jpeg",
         text: "إطلاق برنامج وطني لإعادة تأهيل النزلاء وتكوينهم مهنياً لتسهيل إدماجهم الاجتماعي بعد الإفراج.",
         date: "04 يونيو 2026",
         location: "الجزائر",
@@ -652,7 +652,7 @@ document.addEventListener('DOMContentLoaded', () => {
       {
         title: "الفرقة الجنائية تفك لغز جريمة القتل",
         category: "تحقيقات جنائية",
-        image: "Masked_criminal_attempting_car_theft_202605291359.jpeg",
+        image: "images/Masked_criminal_attempting_car_theft_202605291359.jpeg",
         text: "بعد تحقيق استمر 3 أشهر، الفرقة الوطنية للتحقيقات الجنائية تكشف ملابسات جريمة قتل مزدوج.",
         date: "05 يونيو 2026",
         location: "تيبازة",
@@ -661,7 +661,7 @@ document.addEventListener('DOMContentLoaded', () => {
       {
         title: "مشاريع تنموية كبرى في الجنوب",
         category: "أخبار وطنية",
-        image: "برومت_الخريطة_الجزائرية__Cinematic_realistic_202605291925.jpeg",
+        image: "images/برومت_الخريطة_الجزائرية__Cinematic_realistic_202605291925.jpeg",
         text: "السلطات تطلق حزمة مشاريع تنموية كبرى في الولايات الجنوبية تشمل الصحة والتعليم والبنية التحتية.",
         date: "05 يونيو 2026",
         location: "الولايات الجنوبية",
