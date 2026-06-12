@@ -1,12 +1,20 @@
-const CACHE_NAME = 'info-dz-v2';
+const CACHE_NAME = 'info-dz-v3';
 const PRECACHE = [
   'index.html',
   'admin.html',
   'manifest.json',
+  'videos.json',
   'images/icon-192.svg',
   'images/icon-512.svg',
   'css/style.css',
-  'js/script.js'
+  'js/script.js',
+  'photo/Algerian_police_arresting_a_dangerous_202605281729.jpeg',
+  'photo/Close-up_of_prisoner_hands_gripping_202605291251.jpeg',
+  'photo/Dark_Algerian_prison_corridor,_realistic_202605291122.jpeg',
+  'photo/Large_Algerian_courtroom_interior,_Arabic_202605291312.jpeg',
+  'photo/Masked_criminal_attempting_car_theft_202605291359.jpeg',
+  'photo/برومت_الخريطة_الجزائرية__Cinematic_realistic_202605291925.jpeg',
+  'photo/برومت_الرقم_الأخضر_للدرك_الوطني__202605291656.jpeg'
 ];
 
 self.addEventListener('install', (event) => {
