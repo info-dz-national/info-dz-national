@@ -608,7 +608,10 @@ document.addEventListener('DOMContentLoaded', () => {
       const stored = localStorage.getItem(STORAGE_KEY);
       if (stored) {
         const parsed = JSON.parse(stored);
-        if (Array.isArray(parsed) && parsed.length) return parsed;
+        if (Array.isArray(parsed) && parsed.length) {
+          parsed.forEach(function(item) { if (item.image && !item.thumbnail) item.thumbnail = item.image; });
+          return parsed;
+        }
       }
     } catch {}
     // Default fallback data
@@ -616,7 +619,7 @@ document.addEventListener('DOMContentLoaded', () => {
       {
         title: "عملية أمنية كبرى في 5 ولايات",
         category: "الشرطة",
-        image: "photo/Algerian_police_arresting_a_dangerous_202605281729.jpeg",
+        thumbnail: "photo/Algerian_police_arresting_a_dangerous_202605281729.jpeg",
         text: "أسفرت عملية أمنية واسعة النطاق عبر 5 ولايات عن توقيف 23 متهماً وحجز كميات كبيرة من المخدرات والأسلحة البيضاء.",
         date: "05 يونيو 2026",
         location: "الجزائر العاصمة",
@@ -625,7 +628,7 @@ document.addEventListener('DOMContentLoaded', () => {
       {
         title: "الدرك الوطني يطلق الرقم الأخضر",
         category: "الدرك الوطني",
-        image: "photo/برومت_الرقم_الأخضر_للدرك_الوطني__202605291656.jpeg",
+        thumbnail: "photo/برومت_الرقم_الأخضر_للدرك_الوطني__202605291656.jpeg",
         text: "إطلاق خط ساخن جديد للإبلاغ عن الحوادث والاستفسار عن الخدمات الأمنية على مدار 24 ساعة.",
         date: "05 يونيو 2026",
         location: "الجزائر",
@@ -634,7 +637,7 @@ document.addEventListener('DOMContentLoaded', () => {
       {
         title: "إصلاح المنظومة القضائية",
         category: "العدالة",
-        image: "photo/Large_Algerian_courtroom_interior,_Arabic_202605291312.jpeg",
+        thumbnail: "photo/Large_Algerian_courtroom_interior,_Arabic_202605291312.jpeg",
         text: "وزارة العدل تعلن عن حزمة إصلاحات شاملة لتحديث المنظومة القضائية ورقمنة الخدمات العدلية.",
         date: "05 يونيو 2026",
         location: "الجزائر العاصمة",
@@ -643,7 +646,7 @@ document.addEventListener('DOMContentLoaded', () => {
       {
         title: "برنامج إعادة التأهيل والإدماج",
         category: "السجن",
-        image: "photo/Close-up_of_prisoner_hands_gripping_202605291251.jpeg",
+        thumbnail: "photo/Close-up_of_prisoner_hands_gripping_202605291251.jpeg",
         text: "إطلاق برنامج وطني لإعادة تأهيل النزلاء وتكوينهم مهنياً لتسهيل إدماجهم الاجتماعي بعد الإفراج.",
         date: "04 يونيو 2026",
         location: "الجزائر",
@@ -652,7 +655,7 @@ document.addEventListener('DOMContentLoaded', () => {
       {
         title: "الفرقة الجنائية تفك لغز جريمة القتل",
         category: "تحقيقات جنائية",
-        image: "photo/Masked_criminal_attempting_car_theft_202605291359.jpeg",
+        thumbnail: "photo/Masked_criminal_attempting_car_theft_202605291359.jpeg",
         text: "بعد تحقيق استمر 3 أشهر، الفرقة الوطنية للتحقيقات الجنائية تكشف ملابسات جريمة قتل مزدوج.",
         date: "05 يونيو 2026",
         location: "تيبازة",
@@ -661,7 +664,7 @@ document.addEventListener('DOMContentLoaded', () => {
       {
         title: "مشاريع تنموية كبرى في الجنوب",
         category: "أخبار وطنية",
-        image: "photo/برومت_الخريطة_الجزائرية__Cinematic_realistic_202605291925.jpeg",
+        thumbnail: "photo/برومت_الخريطة_الجزائرية__Cinematic_realistic_202605291925.jpeg",
         text: "السلطات تطلق حزمة مشاريع تنموية كبرى في الولايات الجنوبية تشمل الصحة والتعليم والبنية التحتية.",
         date: "05 يونيو 2026",
         location: "الولايات الجنوبية",
@@ -677,7 +680,7 @@ document.addEventListener('DOMContentLoaded', () => {
     article.className = 'news-card';
     article.dataset.index = index;
     article.innerHTML = `
-      <img src="${item.image}" alt="${item.title}">
+      <img src="${item.thumbnail}" alt="${item.title}">
       <div class="news-body">
         <h3>${item.title}</h3>
         <span>${item.category}</span>
@@ -704,7 +707,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const relatedHtml = related.map((r, i) => `
       <div class="modal-related-card" data-related-index="${newsData.indexOf(r)}">
-        <img src="${r.image}" alt="${r.title}">
+        <img src="${r.thumbnail}" alt="${r.title}">
         <h4>${r.title}</h4>
       </div>
     `).join('');
@@ -713,7 +716,7 @@ document.addEventListener('DOMContentLoaded', () => {
       <div class="modal-container">
         <button class="modal-close"><i class="fas fa-times"></i></button>
         <div class="modal-image">
-          <img src="${item.image}" alt="${item.title}">
+          <img src="${item.thumbnail}" alt="${item.title}">
           <div class="modal-image-overlay"></div>
         </div>
         <div class="modal-content">
